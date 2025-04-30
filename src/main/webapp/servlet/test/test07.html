@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>결제정보</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container">
+		<h2>주문</h2>
+		
+		<!-- /servlet/test07?address=서울시%20강남구&card=국민카드&price=20000 -->
+		<form method="get" action="/servlet/test07">
+		
+			<label>주소</label>
+			<input type="text" class="form-control col-6" name="address">
+			<label>결제카드</label>
+			<input type="text" class="form-control col-6" name="card">
+			<label>가격</label>
+			<input type="text" class="form-control col-6" name="price">
+			<button type="submit" class="btn btn-primary mt-3">주문</button>
+		
+		</form>
+	</div>
+
+</body>
+</html>
