@@ -16,7 +16,7 @@ public class Ex05Controller extends HttpServlet {
 	// 긴 데이터가 포함되어 있는지
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		
+
 		response.setContentType("text/html");
 		
 		// 이름과 생년월일을 전달 받고,
